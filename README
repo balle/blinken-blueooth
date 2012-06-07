@@ -1,0 +1,44 @@
+Blinken Bluetooth Project - A Chaostal project [ http://www.chaostal.de ]
+Released on 22C3
+Programmed by Bastian Ballmann
+Web: http://www.datenterrorist.de
+Mail: Balle@chaostal.de
+
+
+[About]
+
+The project provides tools to trigger blinkenmovies
+using bluetooth enabled devices.
+
+
+[The Tools]
+
+blueblink - Scan for bluetooth devices and play movies
+            depending on the device type or name
+
+sniffer - Using hcidump to sniff hci events like l2ping
+          and iscan to play movies
+
+obexserver - Send messages by vcards (status: not yet finished
+             need to implement uploaded file name)
+
+
+[Requirements]
+
+- BlueZ
+- obexftp / obexserver
+- XML::Simple perl module
+- blinkentools / blib / blprint
+
+
+[Installation]
+
+Get the required tools from bluez.org, blinkenarea.org and cpan.org,
+read the documentation, compile and install them and edit blueblink.conf.
+Start the tools:
+- ./blueblink.pl hci0
+- ./sniffer.pl hci1
+Note: You will need to attach one bluetooth dongle per tool
+Have fun! ;P
+
+# EOF
